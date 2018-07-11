@@ -137,6 +137,12 @@ nav h1 a {
   padding: 0 10px;
   width: 85%;
 }
+.column {
+	height: 100%;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
 
 /* ====================== Restaurant Listing ====================== */
 #restaurants-list {
