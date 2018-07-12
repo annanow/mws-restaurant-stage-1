@@ -109,10 +109,9 @@ nav h1 a {
   width: 100%;
   background-color: #ccc;
 }
-/* ====================== Restaurant Filtering ====================== */
+/* ====================== Restaurant ring ====================== */
 .filter-options {
   width: 100%;
-  height: 50px;
   background-color: #3397DB;
   align-items: center;
 	display: flex;
