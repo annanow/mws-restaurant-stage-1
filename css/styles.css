@@ -333,10 +333,24 @@ nav h1 a {
 }
 
 @media only screen and (max-width: 767px) {
-  #map {
+	#map {
 		width: 100%;
 	}
 	#restaurants-list {
 		width: 100%;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.filter-options {
+		flex-direction: row;
+	}
+}
+
+
+
+@media only screen and (min-width: 1023) and (max-width: 1200px) {
+	.filter-options {
+		flex-direction: row;
 	}
 }
