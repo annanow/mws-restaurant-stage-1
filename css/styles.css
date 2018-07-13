@@ -33,7 +33,7 @@ a img{
 h1, h2, h3, h4, h5, h6 {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0 0 20px;
-	padding-top: 5px;
+	padding-top: 10px;
 }
 article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -130,7 +130,7 @@ nav h1 a {
   background-color: white;
   border: 1px solid #fff;
   font-family: Arial,sans-serif;
-  font-size: 11pt;
+  font-size: 12pt;
   height: 35px;
   letter-spacing: 0;
   margin: 10px;
@@ -153,6 +153,7 @@ nav h1 a {
   text-align: center;
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-between;
 }
 #restaurants-list li {
   background-color: #fff;
@@ -165,6 +166,7 @@ nav h1 a {
   width: 270px;
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
 }
 #restaurants-list .restaurant-img {
   background-color: #ccc;
@@ -314,14 +316,15 @@ nav h1 a {
 		margin: auto;
 		font-size: 85%;
 	}
-
-	table, body td, th {
+  table, body td, th {
 		display: block;
 	}
-
-	td {
+  td {
 		position: relative;
 	}
-
-	
+  td: before {
+		position: absolute;
+		content: attr(data-th);
+		left: 5px;
+	}
 }
