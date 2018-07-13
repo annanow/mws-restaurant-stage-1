@@ -309,6 +309,9 @@ nav h1 a {
 	td {
 		font-size: 80%;
 	}
+	#restaurants-list {
+		width: 100%;
+	}
 }
 
 @media only screen and (max-width: 480px) {
@@ -326,5 +329,14 @@ nav h1 a {
 		position: absolute;
 		content: attr(data-th);
 		left: 5px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+  #map {
+		width: 100%;
+	}
+	#restaurants-list {
+		width: 100%;
 	}
 }
