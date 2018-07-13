@@ -308,3 +308,20 @@ nav h1 a {
 		font-size: 80%;
 	}
 }
+
+@media only screen and (max-width: 480px) {
+	nav h1 a {
+		margin: auto;
+		font-size: 85%;
+	}
+
+	table, body td, th {
+		display: block;
+	}
+
+	td {
+		position: relative;
+	}
+
+	
+}
