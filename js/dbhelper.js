@@ -1,4 +1,17 @@
 /**
+ * ServiceWorker registration.
+ */
+ if (.navigator.serviceWorker) {
+   window.addEventListener('load', function() {
+     navigator.serviceWorker.register('sw.js').then(function(registration) {
+       console.log('ServiceWorker registration successful', registration);
+     }, function(error) {
+       console.log('ServiceWorker registration failed', error);
+     });
+   });
+ }
+
+/**
  * Common database helper functions.
  */
 class DBHelper {
@@ -165,6 +178,6 @@ class DBHelper {
       animation: google.maps.Animation.DROP}
     );
     return marker;
-  } 
+  }
 
 }
