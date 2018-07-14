@@ -1,12 +1,12 @@
 /**
  * ServiceWorker registration.
  */
- if (.navigator.serviceWorker) {
+ if (navigator.serviceWorker) {
    window.addEventListener('load', function() {
      navigator.serviceWorker.register('sw.js').then(function(registration) {
        console.log('ServiceWorker registration successful', registration);
-     }, function(error) {
-       console.log('ServiceWorker registration failed', error);
+     }, function(err) {
+       console.log('ServiceWorker registration failed', err);
      });
    });
  }
