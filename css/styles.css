@@ -6,6 +6,7 @@ body,td,th,p{
 	font-size: 10pt;
 	color: #333;
 	line-height: 1.5;
+	list-style: none;
 }
 body {
 	background-color: #fdfdfd;
@@ -151,9 +152,11 @@ nav h1 a {
   margin: 0;
   padding: 30px 15px 60px;
   text-align: center;
+	align-items: center;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-around;
+	box-sizing: border-box;
 }
 #restaurants-list li {
   background-color: #fff;
