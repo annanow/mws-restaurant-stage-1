@@ -370,11 +370,18 @@ nav h1 a {
 	}
 }
 
-
-
-
 @media only screen and (min-width: 1024px) and (max-width: 1200px) {
 	.filter-options {
 		flex-direction: row;
+	}
+	.filter-options select {
+		width: 80%;
+	}
+	.filter-options select:last child {
+		margin-bottom: 25px;
+	}
+	.filter-options h2 {
+		margin-top: 10px;
+		font-size: 130%;
 	}
 }
