@@ -41,15 +41,15 @@ self.addEventListener("activate", event => {
   );
 });
 
-self.addEventListener("fetch", event => {
-  if (event.request.url.startsWith(self.location.origin)) {
-    event.respondWith(
-      caches.match(event.request)
-      .then(response => {
-        if (response) {
-          return response || fetch(event.request);
-      })
-      .catch(err => console.log(err, event.request))
-    );
-  }
+self.addEventListener("fetch", function (event) {
+	console.log("Request -->", event.request.url);
+	event.respondWith(
+		caches.match(event.request)
+		.then(function(response) {
+			return response || fetch(event.request);
+		})
+		.catch(function(error) {
+			console.error("Error: ", error);
+		})
+  );
 });
