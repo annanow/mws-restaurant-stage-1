@@ -10,7 +10,6 @@
      });
    });
  }
-
 /**
  * Common database helper functions.
  */
